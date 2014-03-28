@@ -1,0 +1,19 @@
+This is an implementation of the recursive procedure described on page 329 in
+section 8.6 of:
+    Computational Geometry in C (2nd Ed.) 
+    Joseph O'Rourke, Cambridge University Press 1998
+
+The code is mostly contained in reachability.pl but for convenience there are
+also two small utility classes (Annulus.pm and Circle.pm).
+
+In addition to the recursive implementation I have also added an iterative 
+version. Profiler testing with a large (up to 5000) number of links revealed
+significant performance issues! This code may be interesting for anyone
+wanting to see perl's abilities for deep recursion. 
+
+Gnuplot is used to visualize the link arm configuration that is found.
+
+The nbproject directory contains a NetBeans project file. I've included this
+so that these files may be easily opened as a NetBeans project. I highly
+recommend the following plugin for anyone using Perl in NetBeans:
+http://plugins.netbeans.org/plugin/10668/perl.
